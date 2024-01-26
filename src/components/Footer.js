@@ -1,9 +1,15 @@
 import React from "react";
+import logo_w from "../assets/logo_w.png";
 
 const Footer = () => {
 	return (
 		<footer>
-			<p>© 2024 Mon Application. Tous droits réservés.</p>
+			<div className="footer-logo">
+				<img src={logo_w} alt="logo kasa" />
+			</div>
+			<div className="sous-titre">
+				<p>c 2020 Kasa. All rights reserved</p>
+			</div>
 		</footer>
 	);
 };
