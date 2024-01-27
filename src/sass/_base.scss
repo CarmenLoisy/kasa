@@ -1,4 +1,3 @@
-@import "./_mixins";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 // Variables
 $font-family-base: "Montserrat", sans-serif;
@@ -30,8 +29,6 @@ body {
 	font-family: $font-family-base;
 	margin: 0 auto;
 	padding: 0;
-	max-width: $body-max-width;
-	//@include center-flex;
 }
 li,
 ul {

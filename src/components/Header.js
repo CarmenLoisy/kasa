@@ -5,12 +5,8 @@ import logo from "../assets/logo.png";
 const Header = () => {
 	return (
 		<header>
-			<div className="header_nav">
-				<div className="logo">
-					<img src={logo} alt="Logo Kasa" />
-				</div>
-				<Navigation />
-			</div>
+			<img className="header_logo" src={logo} alt="Logo Kasa" />
+			<Navigation />
 		</header>
 	);
 };
