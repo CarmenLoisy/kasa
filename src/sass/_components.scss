@@ -2,12 +2,23 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 50px auto;
 	max-width: $body-max-width;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+
 	nav {
 		display: flex;
 		gap: 60px;
 		font-size: 24px;
+	}
+	.nav-active {
+		text-decoration: underline;
 	}
 }
 main {

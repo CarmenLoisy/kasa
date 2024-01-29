@@ -1,0 +1,22 @@
+.error-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 139px;
+	margin: 139px auto;
+	color: $primary-color;
+
+	h1 {
+		font-size: 288px;
+	}
+
+	p {
+		font-size: 36px;
+	}
+
+	a {
+		font-size: 1rem;
+		color: $primary-color;
+		text-decoration-line: underline;
+	}
+}

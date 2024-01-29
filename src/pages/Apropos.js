@@ -1,9 +1,13 @@
 import React from "react";
+import Banner from "../components/Banner";
+import bg_propos from "../assets/img/bg_propos.jpg";
+import Collapse from "../components/Collapse";
 const Apropos = () => {
 	return (
-		<div>
-			<h1>À propos</h1>
-		</div>
+		<main>
+			<Banner src={bg_propos} />
+			<Collapse />
+		</main>
 	);
 };
 

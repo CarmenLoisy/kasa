@@ -1,5 +1,8 @@
+@import "./_variables";
 @import "./_base";
 @import "./_mixins";
 @import "./_layout";
 @import "./_components";
-@import "./_pages";
+@import "./pages/_homepage";
+@import "./pages/_apropos";
+@import "./pages/_error";
