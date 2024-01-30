@@ -1,8 +1,8 @@
-// Logement.js
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Slider from "../components/Slider";
 import data from "../logements.json";
+import LogementDetails from "../components/LogementDetails";
 
 const Logement = () => {
 	const { id } = useParams();
@@ -20,6 +20,7 @@ const Logement = () => {
 	return dataDetails ? (
 		<main>
 			<Slider data={dataDetails} />
+			<LogementDetails data={dataDetails} />
 		</main>
 	) : null;
 };
