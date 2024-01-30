@@ -1,3 +1,4 @@
+// Logement.js
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Slider from "../components/Slider";
@@ -17,9 +18,9 @@ const Logement = () => {
 	const dataDetails = data.find((item) => item.id === id);
 
 	return dataDetails ? (
-		<div>
+		<main>
 			<Slider data={dataDetails} />
-		</div>
+		</main>
 	) : null;
 };
 

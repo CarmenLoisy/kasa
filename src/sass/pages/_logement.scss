@@ -1,0 +1,29 @@
+.slider {
+	position: relative;
+	// width: 100%;
+	overflow: hidden;
+}
+.slider-image {
+	object-fit: cover;
+	width: 100%;
+	border-radius: 25px;
+	height: 415px;
+}
+._Prev,
+._Next {
+	height: 79.2px;
+	position: absolute;
+	top: 50%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+._Prev {
+	left: 0;
+	transform: translateY(-50%) rotate(270deg);
+}
+
+._Next {
+	right: 0;
+	transform: translateY(-50%) rotate(90deg);
+}
