@@ -1,7 +1,8 @@
 .slider {
 	position: relative;
+	margin-bottom: 15px;
 	// width: 100%;
-	overflow: hidden;
+	// overflow: hidden;
 	.slider-image {
 		object-fit: cover;
 		width: 100%;
@@ -42,8 +43,10 @@
 	}
 }
 .logement-details {
+	margin-bottom: 40px;
 	display: grid;
 	grid-template-columns: auto 1fr;
+	gap: 20px;
 	.tags {
 		display: flex;
 		gap: 10px;
@@ -82,7 +85,7 @@
 		display: grid;
 		justify-self: end;
 		width: 160px;
-		gap: 10px;
+		gap: 15px;
 	}
 	.logement-details-content {
 		grid-column: 1 / span 2;
@@ -91,5 +94,18 @@
 		display: flex;
 		justify-content: space-between;
 		height: 20px;
+	}
+}
+
+.logement-details-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.collapse_Item,
+	.collapse_Item_Open {
+		width: 48%;
 	}
 }

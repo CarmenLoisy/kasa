@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import arrow from "../assets/arrow_back.svg";
+
 const CollapseItem = ({ title, text }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +16,7 @@ const CollapseItem = ({ title, text }) => {
 				src={arrow}
 				alt="Arrow icon"
 			/>
-			{isOpen && <p className="content">{text}</p>}
+			{isOpen && <div className="content">{text}</div>}
 		</div>
 	);
 };

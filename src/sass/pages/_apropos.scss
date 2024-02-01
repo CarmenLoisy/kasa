@@ -7,6 +7,8 @@
 }
 .collapse_Item,
 .collapse_Item_Open {
+	height: fit-content;
+	border-radius: 5px;
 	display: flex;
 	cursor: pointer;
 	background-color: #ff6060;
@@ -35,13 +37,13 @@
 		transform: rotate(0deg);
 		transition: transform 0.3s ease;
 	}
-
-	p {
-		padding: 10px;
-		grid-column: 1 / span 2;
-		background-color: #f6f6f6;
-		color: black;
-		font-size: 18px;
-		width: 100%;
-	}
+}
+.content {
+	padding: 10px;
+	grid-column: 1 / span 2;
+	background-color: #f6f6f6;
+	color: black;
+	font-size: 18px;
+	width: 100%;
+	height: -webkit-fill-available;
 }

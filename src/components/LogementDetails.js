@@ -1,8 +1,18 @@
 import React from "react";
 import { Ratings } from "./Rating";
+import CollapseItem from "./CollapseItem";
 
 const LogementDetails = ({ data }) => {
 	const { title, description, host, rating, location, equipments, tags } = data;
+	const descriptionText = <p>{description}</p>;
+
+	const equipmentsList = (
+		<ul>
+			{equipments.map((equipment, index) => (
+				<li key={index}>{equipment}</li>
+			))}
+		</ul>
+	);
 
 	return (
 		<div className="logement-details">
@@ -23,15 +33,8 @@ const LogementDetails = ({ data }) => {
 				<Ratings rating={rating} />
 			</div>
 			<div className="logement-details-content">
-				<p>description{description}</p>
-				<div className="equipments">
-					Equipments:
-					<ul>
-						{equipments.map((equipment, index) => (
-							<li key={index}>{equipment}</li>
-						))}
-					</ul>
-				</div>
+				<CollapseItem title="Description" text={descriptionText} />
+				<CollapseItem title="Equipments" text={equipmentsList} />
 			</div>
 		</div>
 	);
