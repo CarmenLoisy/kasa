@@ -1,10 +1,8 @@
 .error-container {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+	@include flex-container(center, null, column);
 	gap: 139px;
-	margin: 139px auto;
 	color: $primary-color;
+	padding: 50px 20px;
 
 	h1 {
 		font-size: 288px;
@@ -12,11 +10,12 @@
 
 	p {
 		font-size: 36px;
+		text-align: center;
 	}
 
 	a {
 		font-size: 1rem;
-		color: $primary-color;
+		color: $dark-color;
 		text-decoration-line: underline;
 	}
 }

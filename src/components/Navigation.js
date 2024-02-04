@@ -10,7 +10,7 @@ const Navigation = () => {
 			<NavLink
 				to="/a-propos"
 				className={({ isActive }) => (isActive ? "nav-active" : "")}>
-				A Propos
+				À propos
 			</NavLink>
 		</nav>
 	);

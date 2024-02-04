@@ -11,7 +11,7 @@ const Banner = ({ src }) => {
 			<img
 				src={src}
 				alt={altText}
-				className={location.pathname === "/" ? "home_bg" : ""}
+				className={location.pathname === "/" ? "home_bg" : "about_bg"}
 			/>
 			{location.pathname === "/" ? <p>Chez vous, partout et ailleurs</p> : ""}
 		</div>

@@ -1,5 +1,18 @@
-@mixin center-flex {
+@mixin flex-container(
+	$align-items: center,
+	$justify-content: center,
+	$flex-direction: column
+) {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: $align-items;
+	justify-content: $justify-content;
+	flex-direction: $flex-direction;
 }
+@mixin transition($property, $duration: 0.3s, $timing-function: ease) {
+	transition: $property $duration $timing-function;
+}
+//@include flex-container(center, space-between, null);
+//@include flex-container(center, flex-end, column);
+//@include flex-container(center, null, null);
+//@include flex-container(center, null, row-reverse);
+//@include flex-container(center, null, column);

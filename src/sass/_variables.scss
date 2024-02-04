@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 // Font
 $font-family-base: "Montserrat", sans-serif;
 // Couleurs
 $color-background-arrow: rgba(0, 0, 0, 0.5);
-$color-text: white;
 $primary-color: #ff6060;
-$color-background: #f6f6f6;
-$color-star-full: #e3e3e3;
-$color-footer: black;
-
+$gray-color: #f6f6f6;
+$dark-color: black;
+$light-color: white;
+$box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+$spacing-unit: 5px;
 //Dimension
 $body-max-width: 1440px;

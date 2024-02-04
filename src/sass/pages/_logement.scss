@@ -1,17 +1,15 @@
 .slider {
 	position: relative;
 	margin-bottom: 15px;
-	// width: 100%;
-	// overflow: hidden;
 	.slider-image {
 		object-fit: cover;
 		width: 100%;
-		border-radius: 25px;
+		border-radius: $spacing-unit * 5;
 		height: 415px;
 	}
 	._Prev,
 	._Next {
-		height: 79.2px;
+		height: 80px;
 		position: absolute;
 		top: 50%;
 		padding: 10px;
@@ -29,11 +27,10 @@
 	}
 }
 .logement-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	gap: 5px;
+	@include flex-container(null, space-between, column);
 	h1 {
-		color: #ff6060;
+		color: $primary-color;
 		font-size: 36px;
 		font-weight: 500;
 	}
@@ -48,64 +45,57 @@
 	grid-template-columns: auto 1fr;
 	gap: 20px;
 	.tags {
-		display: flex;
+		@include flex-container(center, null, null);
 		gap: 10px;
 		height: 25px;
-		align-items: center;
 		li {
-			border-radius: 10px;
-			background: #ff6060;
+			border-radius: $spacing-unit * 2;
+			background: $primary-color;
 			min-width: 115px;
 			padding: 0 10px;
-			color: white;
+			color: $light-color;
 			text-align: center;
 			font-size: 14px;
 			font-weight: 700;
 		}
 	}
 	.host-details {
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
+		@include flex-container(center, null, row-reverse);
 		gap: 10px;
 		img {
-			border-radius: 50%;
+			border-radius: $spacing-unit * 10;
 			width: 64px;
 			height: 64px;
 		}
 		p {
-			color: #ff6060;
+			color: $primary-color;
 			text-align: right;
 			font-size: 18px;
 			font-weight: 500;
 			width: min-content;
 		}
 	}
-	.logement-details-host {
-		display: grid;
-		justify-self: end;
-		width: 160px;
-		gap: 15px;
-	}
-	.logement-details-content {
-		grid-column: 1 / span 2;
-	}
-	.ratingsCard {
-		display: flex;
-		justify-content: space-between;
-		height: 20px;
-	}
+}
+.logement-details-host {
+	display: grid;
+	justify-self: end;
+	width: 160px;
+	gap: 15px;
 }
 
 .logement-details-content {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-column: 1 / span 2;
 	gap: 20px;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	.collapse_Item,
 	.collapse_Item_Open {
 		width: 48%;
+		min-width: 280px;
 	}
+}
+.ratingsCard {
+	display: flex;
+	gap: 6px;
+	justify-content: space-between;
 }

@@ -1,0 +1,202 @@
+@media screen and (max-width: 1400px) {
+	.header-bg p {
+		left: 10%;
+	}
+
+	main.error-container {
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.header-bg {
+		margin-bottom: 10px;
+	}
+	section.cards-container {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 25px;
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.error-container {
+		h1 {
+			font-size: 96px;
+		}
+
+		a {
+			font-size: 14px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+	}
+	.logement-details {
+		display: flex;
+		flex-direction: column;
+		.logement-details-content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
+	.logement-details-host {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.host-details p {
+		font-size: 12px;
+	}
+
+	.collapse {
+		gap: 20px;
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+
+	section.cards-container {
+		padding: 0;
+	}
+
+	img.header_logo {
+		width: 100px;
+	}
+
+	main {
+		margin: 76px 0 27px 0;
+	}
+
+	.header-bg {
+		margin: 0 0 10px 0;
+		p {
+			font-size: 2rem;
+			left: 6%;
+		}
+	}
+
+	header nav {
+		gap: 26px;
+	}
+
+	header nav,
+	footer {
+		font-size: 16px;
+	}
+	img.home_bg,
+	img.about_bg {
+		height: 113px;
+	}
+
+	.logement-header {
+		h1 {
+			font-size: 26px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+	}
+
+	.cards-container .card {
+		min-width: calc(33.33% - 10px);
+	}
+
+	.logement-details .tags li {
+		min-width: 100px;
+		padding: 0 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.logement-details .host-details img {
+		width: 34px;
+		height: 34px;
+	}
+
+	.logement-details-content {
+		flex-direction: row;
+
+		.collapse_Item,
+		.collapse_Item_Open {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.slider .slider-image {
+		height: 255px;
+	}
+
+	.logement-header {
+		gap: 5px;
+	}
+
+	.logement-details .tags {
+		flex-wrap: wrap;
+	}
+
+	img.slider-button._Prev,
+	img.slider-button._Next {
+		height: auto;
+	}
+
+	.logement-details {
+		gap: 20px;
+	}
+
+	.collapse_Item h3,
+	.collapse_Item_Open h3 {
+		font-size: 13px;
+	}
+
+	.logement-details .tags li {
+		font-size: 14px;
+	}
+
+	.logement-header p {
+		font-size: 14px;
+	}
+
+	.logement-header h1 {
+		font-size: 18px;
+	}
+
+	header nav,
+	footer {
+		font-size: 12px;
+	}
+
+	body,
+	header {
+		background-color: $gray-color;
+	}
+
+	.content {
+		background-color: white;
+		font-size: 12px;
+	}
+
+	.header-bg {
+		margin: 0;
+		p {
+			font-size: 1.5rem;
+			right: 10%;
+		}
+	}
+
+	.cards-container {
+		display: flex;
+		gap: 20px;
+		margin: 22px 0 0 0;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
