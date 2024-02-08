@@ -14,5 +14,4 @@ const CardContainer = () => {
 		</section>
 	);
 };
-
 export default CardContainer;

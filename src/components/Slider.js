@@ -1,4 +1,3 @@
-// Slider.js
 import React, { useState } from "react";
 import arrow from "../assets/arrow_back.svg";
 
