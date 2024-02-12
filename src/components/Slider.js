@@ -1,21 +1,18 @@
 import React, { useState } from "react";
 import arrow from "../assets/arrow_back.svg";
-
 const Slider = ({ data }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
-
-	const handlePrev = () => {
+	const handleClick = (direction) => {
 		setCurrentIndex((prevIndex) =>
-			prevIndex === 0 ? data.pictures.length - 1 : prevIndex - 1
+			direction === "next"
+				? prevIndex === data.pictures.length - 1
+					? 0
+					: prevIndex + 1
+				: prevIndex === 0
+				? data.pictures.length - 1
+				: prevIndex - 1
 		);
 	};
-
-	const handleNext = () => {
-		setCurrentIndex((prevIndex) =>
-			prevIndex === data.pictures.length - 1 ? 0 : prevIndex + 1
-		);
-	};
-
 	return (
 		<div className="slider">
 			<img
@@ -24,13 +21,13 @@ const Slider = ({ data }) => {
 				className="slider-image"
 			/>
 			<img
-				onClick={handlePrev}
+				onClick={() => handleClick("prev")}
 				className="slider-button _Prev"
 				src={arrow}
 				alt="Arrow Prev"
 			/>
 			<img
-				onClick={handleNext}
+				onClick={() => handleClick("next")}
 				className="slider-button _Next"
 				src={arrow}
 				alt="Arrow Next"
@@ -38,5 +35,4 @@ const Slider = ({ data }) => {
 		</div>
 	);
 };
-
 export default Slider;

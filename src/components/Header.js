@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "./Navigation";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
-
 const Header = () => {
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -19,5 +18,4 @@ const Header = () => {
 		</header>
 	);
 };
-
 export default Header;

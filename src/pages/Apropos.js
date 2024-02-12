@@ -36,5 +36,4 @@ const Apropos = () => {
 		</main>
 	);
 };
-
 export default Apropos;

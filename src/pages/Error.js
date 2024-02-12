@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 const ErrorPage = () => {
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -8,7 +7,6 @@ const ErrorPage = () => {
 			behavior: "smooth", // Pour un défilement fluide
 		});
 	};
-
 	return (
 		<main className="error-container">
 			<h1>404</h1>
@@ -19,5 +17,4 @@ const ErrorPage = () => {
 		</main>
 	);
 };
-
 export default ErrorPage;

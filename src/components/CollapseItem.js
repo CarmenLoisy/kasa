@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import arrow from "../assets/arrow_back.svg";
-
 const CollapseItem = ({ title, text }) => {
 	const [isOpen, setIsOpen] = useState(false);
-
 	const handleToggle = () => {
-		setIsOpen(!isOpen);
+		setIsOpen((prevState) => !prevState);
 	};
-
 	return (
 		<div className={`collapse_Item${isOpen ? "_Open" : ""}`} onClick={handleToggle}>
 			<h3>{title}</h3>
@@ -20,5 +17,4 @@ const CollapseItem = ({ title, text }) => {
 		</div>
 	);
 };
-
 export default CollapseItem;
