@@ -51,12 +51,10 @@ const Logement = () => {
 					</div>
 					<Ratings rating={rating} />
 				</div>
-				<Collapse
-					data={[
-						{ title: "Description", text: descriptionText },
-						{ title: "Equipments", text: <ul>{equipmentsList}</ul> },
-					]}
-				/>
+				<div className="logement-details-content">
+					<Collapse title="Description" text={descriptionText} />
+					<Collapse title="Équipements" text={<ul>{equipmentsList} </ul>} />
+				</div>
 			</div>
 		</main>
 	);

@@ -32,8 +32,13 @@ const Apropos = () => {
 	return (
 		<main>
 			<Banner src={bg_propos} />
-			<Collapse data={data} />
+			<div className="collapse">
+				{data.map(({ id, title, text }) => (
+					<Collapse key={id} title={title} text={<p>{text}</p>} />
+				))}
+			</div>
 		</main>
 	);
 };
+
 export default Apropos;
