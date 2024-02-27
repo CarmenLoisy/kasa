@@ -99,3 +99,12 @@
 	gap: 6px;
 	justify-content: space-between;
 }
+.pagination {
+	position: absolute;
+	top: 92%;
+	right: 50%;
+	cursor: pointer;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 500;
+}
