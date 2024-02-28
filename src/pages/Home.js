@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import bgHome from "../assets/img/bg_home.png";
 import { NavLink } from "react-router-dom";
 import data from "../logements.json";
+import Card from "../components/Card";
 const Home = () => {
 	return (
 		<main>
@@ -10,12 +11,7 @@ const Home = () => {
 			<section className="cards-container">
 				{data.map((salon) => (
 					<NavLink key={salon.id} to={`./logement/${salon.id}`}>
-						<article className="card">
-							<img src={salon.cover} alt="" />
-							<div className="overlay">
-								<p>{salon.title}</p>
-							</div>
-						</article>
+						<Card salon={salon} />
 					</NavLink>
 				))}
 			</section>
